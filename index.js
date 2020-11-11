@@ -37,11 +37,13 @@ console.log(getFinals(finals2014));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Implement a higher-order function called/ `getYears` that accepts the callback function `getFinals`, and returns an array called `years` containing all of the years in the dataset */
 
-function getYears(/* code here */) {
-    /* code here */
+function getYears(dataSet, key){
+    const played = dataSet.map(function(dataSet){
+        return dataSet.Year;
+    })
+    return played;
 }
-
-
+console.log(getYears(fifaData, "Year"));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
