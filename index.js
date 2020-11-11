@@ -24,14 +24,14 @@ Create a function called  getFinals that takes `data` as an argument and returns
 
 // let newFinals = [];
 
-function getFinals(info) {
-   /* code here */
-   let newFinals = info.filter(function(item){
-       return item."Stage" === "Finals";
-   });
-   return newFinals;
+function getFinals(data){
+    const newfin = data.filter(function(item){
+        return item.Stage === 'Final';
+        
+    });
+    return newfin;
 }
-console.log(`Task 2: `, getFinals(finals2014));
+console.log(getFinals(finals2014));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
